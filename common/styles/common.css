@@ -1,0 +1,143 @@
+@import './variable';
+@import './list-with-title.css';
+
+:root {
+  --icon-size: 120px;
+}
+
+.sns-list {
+  display: flex;
+  font-size: 34px;
+  justify-content: center;
+
+  & > a {
+    border: none;
+    color: var(--color-gray);
+
+    &:not(:first-child) {
+      padding-left: 24px;
+    }
+  }
+}
+
+.bespoke-backdrop.main {
+  background: var(--color-main);
+}
+
+.bespoke-backdrop.profile {
+  background: var(--color-main);
+}
+
+.bespoke-backdrop.js {
+  background: var(--color-js);
+}
+
+.bespoke-backdrop.node {
+  background: var(--color-node);
+}
+
+.bespoke-backdrop.black {
+  background: var(--color-black);
+}
+
+.toc,
+.toc ol > li:before,
+.chapter {
+  background: var(--color-black);
+}
+
+.card {
+  display: flex;
+
+  & > .card-text {
+    border-left: 3px solid #777;
+    padding-left: 20px;
+    position: relative;
+    text-align: left;
+
+    & > .title {
+      border: none;
+      color: var(--color-main);
+      display: block;
+      font-size: 1.7rem;
+      text-decoration: none;
+    }
+
+    & > .description {
+      font-size: 1.2rem;
+    }
+
+    & > a {
+      bottom: 0;
+      display: block;
+      font-size: 1rem;
+      position: absolute;
+    }
+  }
+
+  & > img {
+    height: 100px;
+    padding: 0 20px;
+    width: 100px;
+  }
+}
+
+.list {
+  display: flex;
+
+  & > *:not(:first-child) {
+    margin-left: 8px;
+  }
+
+  & > ul {
+    list-style: none;
+    margin: 0 50px;
+
+    li {
+      padding: 0;
+    }
+  }
+}
+
+.list-with-description {
+  display: flex;
+  margin: 0 50px;
+
+  & > div:last-child {
+    text-align: left;
+  }
+}
+
+.left-box {
+  text-align: left;
+}
+
+.ref-link {
+  bottom: 10px;
+  font-size: 1rem;
+  position: fixed;
+  right: 20px;
+}
+
+.common-table {
+  margin: 10px;
+  text-align: left;
+
+  & > thead {
+    border-bottom: 2px solid var(--color-main);
+  }
+
+  & th {
+    padding: 5px 10px;
+  }
+
+  & td {
+    padding: 5px 10px;
+  }
+}
+
+pre {
+  & > code {
+    padding: 0;
+  }
+}

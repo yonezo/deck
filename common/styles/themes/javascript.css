@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+@import '../variable';
+@import '../mixins';
+@import '../common';
+
+@font-face {
+  font-family: Stratum;
+  src: url('../../fonts/StratumNo1.ttf');
+}
+
+body {
+  background: var(--color-black);
+  color: var(--color-white);
+  font-family: Stratum, 'Noto Sans JP', 'Helvetica Neue For Number', 'Hiragino Kaku Gothic ProN',
+    'メイリオ', Arial, sans-serif;
+}
+
+.title {
+  & > h1 {
+    color: var(--color-js);
+  }
+
+  color: var(--color-gray);
+}
+
+.end {
+  color: var(--color-js);
+}
+
+.ref-link:hover {
+  color: var(--color-js);
+}
+
+.language-transparent {
+  background: transparent !important;
+
+  & > code {
+    color: #fff;
+    text-shadow: none;
+  }
+}
+
+a {
+  color: var(--color-main);
+}
+
+h2 {
+  color: var(--color-js);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.25rem;
+  text-transform: none;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  border-bottom: 1px solid;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  padding: 0 1.2em 0em;
+  margin-bottom: 1.75rem;
+}
+
+strong {
+  color: var(--color-orange);
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+
+img {
+  width: 90%;
+}
+
+code {
+  background: rgba(122, 122, 122, 0.6);
+  font-size: 20px;
+}
+
+pre code {
+  font-size: inherit;
+}

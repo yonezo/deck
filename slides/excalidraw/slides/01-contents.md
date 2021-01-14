@@ -1,5 +1,3 @@
 ## Contents
 
-<br />
-
 <!-- contents -->

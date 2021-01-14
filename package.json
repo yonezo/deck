@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "config": {
+    "name": "slides/excalidraw"
+  },
   "scripts": {
-    "start": "fusuma start",
-    "build": "fusuma build",
-    "deploy": "yarn build && fusuma deploy",
-    "pdf": "fusuma pdf",
+    "start": "fusuma start -d $npm_package_config_name",
+    "build": "fusuma build -d $npm_package_config_name",
+    "pdf": "fusuma pdf -d $npm_package_config_name",
+    "deploy": "yarn build && fusuma deploy -d $npm_package_config_name",
     "fmt": "prettier --write **/*.{js,json,css,md}",
     "precommit": "pretty-quick --staged"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "husky": "^0.14.3",
     "prettier": "^1.12.1",
     "pretty-quick": "^1.4.1"
