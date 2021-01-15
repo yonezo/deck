@@ -4,11 +4,11 @@
 
 ---
 
-早速ですが、読み進めるための手ほどきをします
+機能単位で読む方法や、コードが実行される順番で読み進める方法などがありますが、今回は後者の方法で進める。
 
 <br />
 
-※ わかっている人には遠回りになるが、きっちり読むためにお付き合いください
+※本当に初歩的な解説になると思いますが、今後他人が書いたコードを読み解くための良い練習になると思うので、お付き合いください。
 
 ---
 
@@ -103,6 +103,22 @@ https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/
 
 ---
 
-##
+## index.tsx
 
 https://github.com/excalidraw/excalidraw/blob/master/src/index.tsx
+
+---
+
+## まとめ
+
+- 基本的には index.js や index.ts などから読み進めれば問題ない
+- npm scripts や webpack の設定によっては、実行される順序が変わる
+- React のコードだからといって、安易に App.tsx などから読み出さないように。index でいつもと違う処理が入っている場合があるため
+
+---
+
+## 補足
+
+このあとコードを追っていくために breakpoint とか活用すると便利！
+
+https://elijahmanor.com/blog/cra-debug-vscode
